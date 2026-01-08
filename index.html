@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider__item">1</div>
+      <div class="slider__item">2</div>
+      <div class="slider__item">3</div>
+      <div class="slider__item">4</div>
+      <div class="slider__item">5</div>
+    </div>
+
+    <div class="slider2">
+      <div class="slider2__item">1</div>
+      <div class="slider2__item">2</div>
+      <div class="slider2__item">3</div>
+      <div class="slider2__item">4</div>
+      <div class="slider2__item">5</div>
+    </div>
+
+    <script src="./slider/helpers.js"></script>
+    <script src="./slider/state.js"></script>
+    <script src="./slider/template.js"></script>
+    <script src="./slider/navigation.js"></script>
+    <script src="./slider/events.js"></script>
+    <script src="./slider/render.js"></script>
+    <script src="./slider/main.js"></script>
+    <script>
+      const slider1 = Slider.create();
+      const slider2 = Slider.create();
+
+      slider1.init({ container: '.slider', items: '.slider__item' }, { interval: 1000, duration: 300 });
+
+      slider2.init({ container: '.slider2', items: '.slider2__item' }, { interval: 1000, duration: 300 });
+    </script>
+  </body>
+</html>
