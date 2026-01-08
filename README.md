@@ -1,0 +1,1 @@
+A simple slider built with vanilla JS to practice basic event handling and HTML generation via methods and classes inside 3rd party library. Includes all possible options for interacting with the slider.
